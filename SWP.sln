@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWP", "SWP\SWP.csproj", "{57D5BD38-5325-4314-A2F9-B07E219739C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWPTests", "SWPTests\SWPTests.csproj", "{B7A8982B-1520-47C2-BEF2-78997B197B1C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{57D5BD38-5325-4314-A2F9-B07E219739C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D5BD38-5325-4314-A2F9-B07E219739C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D5BD38-5325-4314-A2F9-B07E219739C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7A8982B-1520-47C2-BEF2-78997B197B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7A8982B-1520-47C2-BEF2-78997B197B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7A8982B-1520-47C2-BEF2-78997B197B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7A8982B-1520-47C2-BEF2-78997B197B1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
