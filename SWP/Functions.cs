@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace SWP
 {
-    internal class Functions
+    public class Functions
     {
-        private T DeepClone<T>(T obj)
+        public static T DeepClone<T>(T obj)
         {
             T objResult;
             using (var ms = new MemoryStream())

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace SWP
 {
-    public class WeaponMelee
+    [Serializable]
+    public class WeaponMelee : Weapon
     {
-        public int UnitTestTest()
+        public WeaponMelee(){}
+        public WeaponMelee(string name, WeaponType wType, Quality wQuality, int durability, int value, int attack, int speed) : base(name, wType, wQuality, durability, value, attack, speed)
         {
-            return 1;
         }
     }
 }

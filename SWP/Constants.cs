@@ -6,7 +6,34 @@ using System.Threading.Tasks;
 
 namespace SWP
 {
-    class Constants
+
+    public enum Quality
     {
+        Broken,
+        Common,
+        Uncommon,
+        Rare,
+        Epic,
+        Legendary
+    }
+
+    public enum WeaponType
+    {
+        Default,
+        Dagger,
+        ShortSword,
+        LongSword,
+        BroadSword,
+        Zweihander,
+        Spear,
+        Mace,
+        Whip,
+        Hammer,
+        Axe,
+    }
+
+    public class Constants
+    {
+        
     }
 }
