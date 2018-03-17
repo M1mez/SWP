@@ -14,7 +14,7 @@ namespace SWP.Tests
         [TestMethod()]
         public void UnitTestTestTest()
         {
-            var p = new Prototype();
+            var p = new WeaponMelee();
             Assert.AreEqual(1, p.UnitTestTest());
         }
     }
