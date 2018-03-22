@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SWP
@@ -10,23 +11,15 @@ namespace SWP
     {
         static void Main(string[] args)
         {
-            var defaultAxe = new WeaponMelee();
+            var pm = new PrototypeManager();
 
-            var firstAxe = new WeaponMelee("firstAxe", WeaponType.Axe, Quality.Rare, 80, 15, 7, 6);
+            var dagger = (Weapon) pm.Clone(ItemClass.Weapon, WeaponType.Dagger.ToString());
+            dagger.WeaponInformationPlease();
 
-            var secondAxe = firstAxe.Clone();
-            secondAxe.Name = "secondAxe";
+            Console.WriteLine();
 
-            var thirdAxe = firstAxe.Clone("thirdAxe", WeaponType.Axe, Quality.Legendary, 90, 30, 11, 7);
-
-            var fourthAxe = thirdAxe.Clone();
-            fourthAxe.Name = "fourthAxe";
-
-            defaultAxe.WeaponInformationPlease();
-            firstAxe.WeaponInformationPlease();
-            secondAxe.WeaponInformationPlease();
-            thirdAxe.WeaponInformationPlease();
-            fourthAxe.WeaponInformationPlease();
+            var sword = (Weapon) pm.Clone(ItemClass.Weapon, WeaponType.Sword.ToString());
+            sword.WeaponInformationPlease();
 
             Console.Read();
         }

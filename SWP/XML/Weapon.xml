@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Item xsi:type="Weapon">
+		<ItemType>Dagger</ItemType>
+		<Name>Dagger</Name>
+		<WType>Dagger</WType>
+		<WQuality>Normal</WQuality>
+		<Durability>50</Durability>
+		<Value>25</Value>
+		<Attack>5</Attack>
+		<Speed>9</Speed>
+	</Item>
+	<Item xsi:type="Weapon">
+		<ItemType>Sword</ItemType>
+		<Name>Sword</Name>
+		<WType>Sword</WType>
+		<WQuality>Normal</WQuality>
+		<Durability>50</Durability>
+		<Value>25</Value>
+		<Attack>5</Attack>
+		<Speed>9</Speed>
+	</Item>
+</ArrayOfItem>

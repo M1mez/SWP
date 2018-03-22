@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Item xsi:type="Weapon">
+    <ItemType>lol</ItemType>
+    <Name>1</Name>
+    <WType>1</WType>
+    <WQuality>1</WQuality>
+    <Durability>1</Durability>
+    <Value>0</Value>
+    <Attack>1</Attack>
+    <Speed>1</Speed>
+  </Item>
+  <Item xsi:type="Weapon">
+    <ItemType>kek</ItemType>
+    <Name>2</Name>
+    <WType>2</WType>
+    <WQuality>2</WQuality>
+    <Durability>2</Durability>
+    <Value>0</Value>
+    <Attack>2</Attack>
+    <Speed>2</Speed>
+  </Item>
+</ArrayOfItem>

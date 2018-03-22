@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace SWP
 {
+    public enum ItemClass
+    {
+        Weapon,
+        Potion
+    }
 
     public enum Quality
     {
+        
         Broken,
         Common,
         Uncommon,
@@ -21,15 +22,8 @@ namespace SWP
     {
         Default,
         Dagger,
-        ShortSword,
-        LongSword,
-        BroadSword,
-        Zweihander,
-        Spear,
-        Mace,
-        Whip,
-        Hammer,
-        Axe,
+        Sword,
+        LongSword
     }
 
     public class Constants
