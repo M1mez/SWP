@@ -9,8 +9,9 @@ namespace SWP
 {
     [XmlInclude(typeof(Weapon))]
     [Serializable]
-    public abstract class Item
+    public abstract class Item : ICloneable
     {
         public string ItemType;
+        public object Clone() => Constants.DeepClone(this);
     }
 }

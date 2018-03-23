@@ -12,17 +12,18 @@ namespace SWP
 
     class PrototypeManager
     {
-        private PrototypeManager(){}
-
-        private static PrototypeManager _pm = null;
-
-        public static PrototypeManager GetInstance() => _pm ?? (_pm = new PrototypeManager());
-
-        public Item Clone(ItemClass itemClass, string itemType) => GetXmlItem(itemClass.ToString(), itemType);
-
-        private Item GetXmlItem(string type, string itemType)
+        private PrototypeManager()
         {
-            var path = $"O:/GIT/SWP/SWP/XML/{type}.xml";
+            readItems();
+        }
+        private static PrototypeManager _pm = null;
+        public static PrototypeManager GetInstance() => _pm ?? (_pm = new PrototypeManager());
+        private Dictionary<string, Item> _itemList = new Dictionary<string, Item>();
+        public Item Clone(string ItemType) => Constants.DeepClone(_itemList[ItemType]);
+
+        private void readItems()
+        {
+            var path = Directory.GetParent(Directory.GetCurrentDirectory()).FullName + "/Items.xml";
 
             XmlSerializer serializer = new XmlSerializer(typeof(List<Item>));
             List<Item> deserializedList;
@@ -31,8 +32,15 @@ namespace SWP
             {
                 deserializedList = (List<Item>)serializer.Deserialize(stream);
             }
-            
-            return deserializedList.Find(x => x.ItemType == itemType);
+
+            deserializedList.ForEach(el =>
+            {
+                if (!_itemList.ContainsKey(el.ItemType))
+                {
+                    _itemList.Add(el.ItemType, el);
+                }
+                else throw new Exception($"Item {el.ItemType} already exists in List!");
+            });
         }
     }
 }
