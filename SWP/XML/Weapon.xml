@@ -15,9 +15,19 @@
 		<Name>Sword</Name>
 		<WType>Sword</WType>
 		<WQuality>Normal</WQuality>
-		<Durability>50</Durability>
-		<Value>25</Value>
-		<Attack>5</Attack>
-		<Speed>9</Speed>
+		<Durability>60</Durability>
+		<Value>50</Value>
+		<Attack>10</Attack>
+		<Speed>6</Speed>
+	</Item>
+	<Item xsi:type="Weapon">
+		<ItemType>Hammer</ItemType>
+		<Name>Hammer</Name>
+		<WType>Hammer</WType>
+		<WQuality>Normal</WQuality>
+		<Durability>80</Durability>
+		<Value>42</Value>
+		<Attack>7</Attack>
+		<Speed>3</Speed>
 	</Item>
 </ArrayOfItem>

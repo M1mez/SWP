@@ -9,7 +9,6 @@ namespace SWP
 
     public enum Quality
     {
-        
         Broken,
         Common,
         Uncommon,
@@ -23,7 +22,8 @@ namespace SWP
         Default,
         Dagger,
         Sword,
-        LongSword
+        LongSword,
+        Hammer
     }
 
     public class Constants

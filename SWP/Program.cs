@@ -11,7 +11,7 @@ namespace SWP
     {
         static void Main(string[] args)
         {
-            var pm = new PrototypeManager();
+            var pm = PrototypeManager.GetInstance();
 
             var dagger = (Weapon) pm.Clone(ItemClass.Weapon, WeaponType.Dagger.ToString());
             dagger.WeaponInformationPlease();
@@ -20,6 +20,11 @@ namespace SWP
 
             var sword = (Weapon) pm.Clone(ItemClass.Weapon, WeaponType.Sword.ToString());
             sword.WeaponInformationPlease();
+
+            Console.WriteLine();
+
+            var hammer = (Weapon) pm.Clone(ItemClass.Weapon, WeaponType.Hammer.ToString());
+            hammer.WeaponInformationPlease();
 
             Console.Read();
         }

@@ -12,21 +12,13 @@ namespace SWP
 
     class PrototypeManager
     {
-        public Item Clone(ItemClass itemClass, string itemType)
-        {
-            //var itemClassStr = "SWP." + itemClass;
-            var item = GetXmlItem(itemClass.ToString(), itemType);
+        private PrototypeManager(){}
 
-            if (item == null)
-            {
-                Console.WriteLine("item is null " + itemType);
-                Console.Read();
-            }
+        private static PrototypeManager _pm = null;
 
+        public static PrototypeManager GetInstance() => _pm ?? (_pm = new PrototypeManager());
 
-            return item;
-        }
-
+        public Item Clone(ItemClass itemClass, string itemType) => GetXmlItem(itemClass.ToString(), itemType);
 
         private Item GetXmlItem(string type, string itemType)
         {
